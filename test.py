@@ -2,23 +2,11 @@ from nicegui import ui
 import polars as pl
 import pandas as pd
 import io
-from pycaret.time_series import *
-from dropbox import files
 import json
 import base64
 from datetime import datetime
 
 buffer = io.BytesIO()
-
-APP_KEY = 'bfc7gt2wmbd081b'
-
-BASIC_AUTH = base64.b64encode(f'{APP_KEY}:{}'.encode())
-headers = {
-    'Authorization': f"Basic {BASIC_AUTH}",
-    'Content-Type': 'application/x-www-form-urlencoded',
-}
-data = f'code={}&grant_type=authorization_code'
-
 
 #dbx = dropbox.Dropbox(tok)
 #md, res = dbx.files_download('/user.json')
