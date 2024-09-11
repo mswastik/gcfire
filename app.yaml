@@ -1,0 +1,20 @@
+runtime: python312
+
+entrypoint: python main.py
+
+instance_class: F2
+
+env_variables:
+  BUCKET_NAME: "hallowed-port-418405.appspot.com"
+  ENDPOINTS_SERVICE_VERSION: "1662907982918189056"
+  GOOGLE_APPLICATION_CREDENTIALS: "gs://hallowed-port-418405.appspot.com/hallowed-port-418405-6091f7083f30.json"
+
+handlers:
+# Matches requests to /images/... to files in static/images/...
+#- url: /images
+#  static_dir: static/images
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
