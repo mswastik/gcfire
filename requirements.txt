@@ -3,3 +3,4 @@ polars
 nicegui
 pyarrow
 fastexcel
+google-cloud-aiplatform
