@@ -135,9 +135,9 @@ def reg():
                             'weathersit', 'temp', 'atemp', 'hum', 'windspeed'])
         #print(dft.loc[0,:].to_json())
         #pred=mod.predict(dft)
-        #headers = {"Authorization": "Bearer ya29.a0AXooCgvToe_4ZhTJahD3iF5ZUCP9o-APfGoX7lG7aLSL5w1W3d651b1y1yMJyDD34CaWJH9bMAuEvtSveAbc6bCOZ4-AWAazwfTeja6eJPqsJJpVg8XlABb24ZGje4yNZJUhdlEDx7A2joSez6fPkM6O-Okeg4BAypnAPyYSdTgaCgYKAUASARESFQHGX2MiziRvCcPpHt7tjWG4Dsan3g0178"}
+        #headers = {"Authorization": "Bearer "}
         #response=requests.post('https://us-central1-aiplatform.googleapis.com/v1/projects/563926887952/locations/us-central1/endpoints/1662907982918189056:predict',
-        #              json={"instances": [dft.iloc[0,:].to_json()]}),#auth=BearerAuth('ya29.a0AXooCgvToe_4ZhTJahD3iF5ZUCP9o-APfGoX7lG7aLSL5w1W3d651b1y1yMJyDD34CaWJH9bMAuEvtSveAbc6bCOZ4-AWAazwfTeja6eJPqsJJpVg8XlABb24ZGje4yNZJUhdlEDx7A2joSez6fPkM6O-Okeg4BAypnAPyYSdTgaCgYKAUASARESFQHGX2MiziRvCcPpHt7tjWG4Dsan3g0178'))
+        #              json={"instances": [dft.iloc[0,:].to_json()]}),#auth=BearerAuth(''))
         #aiplatform.init(project='563926887952', location='us-central1')
         endpoint = aiplatform.Endpoint('1662907982918189056')
         #dft=dft.astype({"day":'int32',"mnth":'int32',"year":'int32',"season":'int32',"holiday":'int32',"weekday":'int32',"workingday":'int32'
